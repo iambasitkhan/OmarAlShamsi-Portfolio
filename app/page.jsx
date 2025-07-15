@@ -62,13 +62,13 @@ export default function Home() {
           alt="Omar Al Shamsi picture"
           fill
           className="-z-10 sm:hidden object-cover"
-        />
+        /> */}
         <Image
-          src={OmarAlShamsiPic1}
+          src="/SirOmar5.jpg"
           fill
           alt="Omar Al Shamsi picture"
           className="-z-10 hidden sm:block h-full object-cover"
-        /> */}
+        />
         <div className=" grid grid-cols-1 sm:grid-cols-2 max-w-screen-2xl mx-auto px-10  absolute top-1/2 -translate-y-1/2 2xl:translate-x-1/4 translate-x-4">
           <div className="sm:flex items-end sm:items-center justify-center hidden">
             <div className={`mb-8 ${playfair.className}`}>
