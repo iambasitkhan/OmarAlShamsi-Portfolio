@@ -13,18 +13,16 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import sirOmar from "@/public/sirOmar4.jpg";
-import officePic from "@/public/office-pic.jpeg"
+import officePic from "@/public/office-pic.jpeg";
 import Link from "next/link";
-import signature from "@/public/owner-sig.png"
-import logoDark from "@/public/logo-01.png"
+import signature from "@/public/owner-sig.png";
+import logoDark from "@/public/logo-01.png";
 
 // import OmarAlShamsiSign from "@/public/owner-sig.png"
-import medicalNeglegence from "@/public/casestudyImage2.jpg"
-import CardAccidentImage from "@/public/car-accident.webp"
-import brainInjury from "@/public/brainInjury.jpg"
-import defectiveRoad from "@/public/defectiveRoad.webp"
-
-
+import medicalNeglegence from "@/public/casestudyImage2.jpg";
+import CardAccidentImage from "@/public/car-accident.webp";
+import brainInjury from "@/public/brainInjury.jpg";
+import defectiveRoad from "@/public/defectiveRoad.webp";
 
 import Marquee from "react-fast-marquee";
 import CountUpper from "./_components/CountUp";
@@ -32,15 +30,55 @@ import ContactUs from "./_components/forms/ContactUs";
 import Map from "./_components/Map";
 
 const practiceAreas = [
-  { icon: "/Icons/Icon18.png", title: "Litigation", description: " We represent individuals, businesses, and institutions in legal disputes through skilled litigation and advocacy." },
-  { icon: "/Icons/Icon27.png", title: "Personal injury", description: "Our legal team helps you claim compensation for injuries caused by accidents, negligence, or unsafe conditions." },
-  { icon: "/Icons/Icon21.png", title: "Civil litigation", description: "We provide expert representation in all types of civil disputes, ensuring your rights are protected and justice is served." },
-  { icon: "/Icons/Icon20.png", title: "Consumer issues", description: "We handle legal matters related to consumer rights, product liability, and commercial franchising across the UAE and GCC." },
-  { icon: "/Icons/Icon03.png", title: "Company commercial", description: "We offer legal guidance on company formation, mergers, and structuring tailored to your business goals." },
-  { icon: "/Icons/Icon25.png", title: "Employment labor", description: "We protect your rights in the workplace by providing legal advice, dispute resolution, and representation for employers and employees." },
-  { icon: "/Icons/Icon21.png", title: "Criminal justice", description: "We offer legal defense and advisory services in criminal matters, assisting our clients in recovering their losses through court representation and legal settlement." },
-  { icon: "/Icons/Icon20.png", title: "Intellectual property", description: "We provide defense and legal advice in criminal cases, and help clients recover losses through legal settlement methods." }]
-
+  {
+    icon: "/Icons/Icon20.png",
+    title: "Litigation",
+    description:
+      " We represent individuals, businesses, and institutions in legal disputes through skilled litigation and advocacy.",
+  },
+  {
+    icon: "/Icons/Icon51.png",
+    title: "Personal injury",
+    description:
+      "Our legal team helps you claim compensation for injuries caused by accidents, negligence, or unsafe conditions.",
+  },
+  {
+    icon: "/Icons/Icon49.png",
+    title: "Civil litigation",
+    description:
+      "We provide expert representation in all types of civil disputes, ensuring your rights are protected and justice is served.",
+  },
+  {
+    icon: "/Icons/Icon06.png",
+    title: "Consumer issues",
+    description:
+      "We handle legal matters related to consumer rights, product liability, and commercial franchising across the UAE and GCC.",
+  },
+  {
+    icon: "/Icons/Icon23.png",
+    title: "Company commercial",
+    description:
+      "We offer legal guidance on company formation, mergers, and structuring tailored to your business goals.",
+  },
+  {
+    icon: "/Icons/Icon27.png",
+    title: "Employment labor",
+    description:
+      "We protect your rights in the workplace by providing legal advice, dispute resolution, and representation for employers and employees.",
+  },
+  {
+    icon: "/Icons/Icon25.png",
+    title: "Criminal justice",
+    description:
+      "We offer legal defense and advisory services in criminal matters, assisting our clients in recovering their losses through court representation and legal settlement.",
+  },
+  {
+    icon: "/Icons/Icon16.png",
+    title: "Intellectual property",
+    description:
+      "We provide defense and legal advice in criminal cases, and help clients recover losses through legal settlement methods.",
+  },
+];
 
 export default function Home() {
   return (
@@ -58,11 +96,14 @@ export default function Home() {
           alt="Omar Al Shamsi picture"
           className="-z-10 hidden sm:block h-full object-cover"
         />
-        <div className=" grid grid-cols-1 sm:grid-cols-2 max-w-screen-2xl mx-auto px-10  absolute top-1/2 -translate-y-1/2 2xl:translate-x-1/4 translate-x-4">
+        <div className=" grid grid-cols-1 sm:grid-cols-[auto_auto] max-w-screen-2xl mx-auto px-10  absolute top-1/2 -translate-y-1/2 2xl:translate-x-1/4 translate-x-4">
           <div className="sm:flex items-end sm:items-center justify-center hidden">
             <div className={`mb-8 ${playfair.className}`}>
               <h2 className={`text-3xl lg:text-5xl text-[#D2B48C] mb-3`}>
-                I`m <span className=" text-4xl lg:text-6xl uppercase tracking-wider">Omar AlShamsi</span>
+                I`m{" "}
+                <span className=" text-4xl lg:text-6xl uppercase tracking-wider">
+                  Omar AlShamsi
+                </span>
               </h2>
               <h1 className="text-xl lg:text-2xl text-amber-50">
                 Your Trusted Legal Partner in the UAE.
@@ -74,15 +115,18 @@ export default function Home() {
       </header>
       <div className="py-14 sm:hidden">
         <h2 className="text-xl text-center mb-4">
-          I`m <svg className="block"
-            width="auto"
-            height="50"
-            viewBox="0 0 100 100"
-          ><text x="50%"
-            y="50%"
-            dominantBaseline="middle"
-            textAnchor="middle"
-            className={`uppercase xyz ${playfair.className}`}>Omar Al Shamsi</text></svg>
+          I`m{" "}
+          <svg className="block" width="auto" height="50" viewBox="0 0 100 100">
+            <text
+              x="50%"
+              y="50%"
+              dominantBaseline="middle"
+              textAnchor="middle"
+              className={`uppercase xyz ${playfair.className}`}
+            >
+              Omar Al Shamsi
+            </text>
+          </svg>
         </h2>
         <h1 className="text-xl text-center">
           Your Trusted Legal Partner <div> in the UAE</div>
@@ -145,7 +189,6 @@ export default function Home() {
             <Link href="#">
               <CardHeader className="flex flex-col items-center justify-center">
                 <div className="h-18 md:h-16 w-16 mb-2 relative">
-
                   <Image
                     className="object-cover"
                     src="/Icons/Icon02.png"
@@ -185,8 +228,12 @@ export default function Home() {
               <Image src={signature} alt="Omar al shamsi signatures." />
             </div>
           </div>
-          <div>
-            <Image src={sirOmar} alt="Omar Al shamsi Picture" />
+          <div className="overflow-hidden">
+            <Image
+              src={sirOmar}
+              alt="Omar Al shamsi Picture"
+              className="scale-150 sm:h-full sm:w-auto sm:object-cover"
+            />
           </div>
         </Card>
       </section>
@@ -199,15 +246,21 @@ export default function Home() {
         </h2>
         <div className="max-w-screen-2xl px-6 md:px-10 mx-auto grid grid-cols-1 md:grid-cols-3 md:gap-y-6">
           <div className="overflow-hidden md:col-span-1">
-            <Image src={CardAccidentImage} alt="Image of Medical Neglence" className="filter grayscale-75 scale-125 w-full h-full object-cover" />
+            <Image
+              src={CardAccidentImage}
+              alt="Image of Medical Neglence"
+              className="filter grayscale-75 scale-125 w-full h-full object-cover"
+            />
           </div>
           <div className="bg-[#d8b28d47] py-6 px-8 backdrop-blur-2xl text-amber-50 md:col-span-2 ">
-            <p className="text-[#2e2215] text-lg font-mono">2023</p>
+            <p className="text-[#2e2215] text-lg font-mono md:mb-4">2023</p>
             <div className="text-white">
-              <p className={`mb-3 text-3xl xl:text-5xl text-black ${playfair.className}`}>
+              <p
+                className={`mb-3 text-3xl xl:text-5xl text-black ${playfair.className}`}
+              >
                 Trucking Accident
               </p>
-              <p className="text-black tracking-wider md:text-lg xl:text-2xl">
+              <p className="text-black tracking-wider md:text-lg 2xl:text-2xl">
                 In 2023, a major legal case involving a trucking accident was
                 handled successfully in the UAE. Our legal team secured just
                 compensation for the injured party, highlighting the importance
@@ -216,15 +269,21 @@ export default function Home() {
             </div>
           </div>
           <div className=" md:col-start-3 relative ">
-            <Image src={medicalNeglegence} alt="Image of Medical Neglence" className="-z-30 w-full h-full object-cover filter grayscale-75" />
+            <Image
+              src={medicalNeglegence}
+              alt="Image of Medical Neglence"
+              className="-z-30 w-full h-full object-cover filter grayscale-75"
+            />
           </div>
           <div className="md:col-span-2 md:col-start-1 md:row-start-2 bg-[#d8b28d47] py-6 px-8 backdrop-blur-3xl text-amber-50">
-            <p className="text-[#2e2215] text-lg font-mono">2023</p>
+            <p className="text-[#2e2215] text-lg font-mono md:mb-4">2023</p>
             <div className="text-white">
-              <p className={`mb-3 text-3xl xl:text-5xl text-black ${playfair.className}`}>
+              <p
+                className={`mb-3 text-3xl xl:text-5xl text-black ${playfair.className}`}
+              >
                 Medical negligence
               </p>
-              <p className="text-black tracking-wider md:text-lg xl:text-2xl">
+              <p className="text-black tracking-wider md:text-lg 2xl:text-2xl">
                 A high-profile medical negligence case in 2023 resulted in
                 significant public concern. We represented the affected party
                 and achieved justice through a strong legal strategy and
@@ -233,15 +292,21 @@ export default function Home() {
             </div>
           </div>
           <div className="md:col-span-1 md:col-start-1 md:row-start-3">
-            <Image src={brainInjury} alt="Image of Medical Neglence" className=" filter grayscale-75 h-full w-full object-cover" />
+            <Image
+              src={brainInjury}
+              alt="Image of Medical Neglence"
+              className=" filter grayscale-75 h-full w-full object-cover"
+            />
           </div>
           <div className="md:col-span-2 bg-[#d8b28d47] py-6 px-8 backdrop-blur-3xl text-amber-50">
-            <p className="text-[#2e2215] text-lg font-mono">2021</p>
+            <p className="text-[#2e2215] text-lg font-mono md:mb-4">2021</p>
             <div className="text-black">
-              <p className={`mb-3 text-3xl xl:text-5xl text-black ${playfair.className}`}>
+              <p
+                className={`mb-3 text-3xl xl:text-5xl text-black ${playfair.className}`}
+              >
                 Brain injury
               </p>
-              <p className="text-black tracking-wider md:text-lg xl:text-2xl">
+              <p className="text-black tracking-wider md:text-lg 2xl:text-2xl">
                 In 2021, we represented a young individual in a severe brain
                 injury case. This devastating incident required expert legal
                 handling, and we succeeded in obtaining a favorable outcome that
@@ -250,15 +315,21 @@ export default function Home() {
             </div>
           </div>
           <div className="">
-            <Image src={defectiveRoad} alt="Image of Medical Neglence" className="filter grayscale-75 h-full w-full object-cover" />
+            <Image
+              src={defectiveRoad}
+              alt="Image of Medical Neglence"
+              className="filter grayscale-75 h-full w-full object-cover"
+            />
           </div>
           <div className="md:col-span-2 md:col-start-1 md:row-start-4 bg-[#d8b28d47] py-6 px-8 backdrop-blur-3xl text-amber-50">
-            <p className="text-[#2e2215] text-lg font-mono">2020</p>
+            <p className="text-[#2e2215] text-lg font-mono md:mb-4">2020</p>
             <div className="text-white">
-              <p className={`mb-3 text-3xl md:text-5xl text-black ${playfair.className}`}>
+              <p
+                className={`mb-3 text-3xl md:text-5xl text-black ${playfair.className}`}
+              >
                 Defective roadway
               </p>
-              <p className="text-black tracking-wider md:text-lg xl:text-2xl">
+              <p className="text-black tracking-wider md:text-lg 2xl:text-2xl">
                 In 2020, a critical case emerged due to poorly maintained
                 roadways in Dubai. Our firm secured a judgment emphasizing the
                 city’s responsibility for public safety, resulting in enhanced
@@ -267,7 +338,11 @@ export default function Home() {
             </div>
           </div>
           <div className="hidden">
-            <Image src={medicalNeglegence} alt="Image of Medical Neglence" className="h-full w-full object-cover" />
+            <Image
+              src={medicalNeglegence}
+              alt="Image of Medical Neglence"
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
       </section>
@@ -283,8 +358,9 @@ export default function Home() {
       </section>
       <Marquee pauseOnHover className="bg-[#b7945e] py-14 gap-4" speed={100}>
         <div className="flex gap-4">
-
-          <div className={` text-amber-50 text-5xl font-extralight`}>Criminal Law</div>
+          <div className={` text-amber-50 text-5xl font-extralight`}>
+            Criminal Law
+          </div>
           <span className="text-lg !w-8">&#x2E;</span>
           <div className={` text-amber-50 text-5xl`}>Family Law</div>
           <span className="text-lg !w-8">&#x2E;</span>
@@ -302,19 +378,19 @@ export default function Home() {
           Case Studies
         </h2>
         <div className="max-w-screen-lg mx-auto grid grid-cols-1  gap-8">
-          <Link
-            href="#"
-            className={` border border-[#D2B48C]`}
-          >
+          <Link href="#" className={` border border-[#D2B48C]`}>
             <div className="grid grid-cols-2 sm:grid-cols-[1fr_auto_auto] items-center ">
               <div className="col-span-2 sm:col-span-1 p-2">
-                <p className="font-medium xl:text-2xl">Character certificate and support letters for the criminal court</p>
+                <p className="font-medium xl:text-2xl">
+                  Character certificate and support letters for the criminal
+                  court
+                </p>
               </div>
               <div className="border border-b-0 border-l-0 border-[#D2B48C] sm:border-t-0 p-2  text-xs self-stretch sm:flex sm:flex-col">
-                <span className="block font-semibold sm:mb-2">
-                  Family Law
+                <span className="block font-semibold sm:mb-2">Family Law</span>
+                <span className="text-sm leading-0.5 ">
+                  By Ellington Crises
                 </span>
-                <span className="text-sm leading-0.5 ">By Ellington Crises</span>
               </div>
               <div className="p-2 border border-l-0 border-b-0 border-r-0 self-stretch text-sm border-[#D2B48C] sm:border-t-0 flex justify-end">
                 <span className="mr-1 font-semibold">26</span>
@@ -322,19 +398,19 @@ export default function Home() {
               </div>
             </div>
           </Link>
-          <Link
-            href="#"
-            className={` border border-[#D2B48C]`}
-          >
+          <Link href="#" className={` border border-[#D2B48C]`}>
             <div className="grid grid-cols-2 sm:grid-cols-[1fr_auto_auto] items-center ">
               <div className="col-span-2 sm:col-span-1 p-2">
-                <p className="font-medium xl:text-2xl">Character certificate and support letters for the criminal court</p>
+                <p className="font-medium xl:text-2xl">
+                  Character certificate and support letters for the criminal
+                  court
+                </p>
               </div>
               <div className="border border-b-0 border-l-0 border-[#D2B48C] sm:border-t-0 p-2  text-xs self-stretch">
-                <span className="block font-semibold">
-                  Family Law
+                <span className="block font-semibold">Family Law</span>
+                <span className="text-sm leading-0.5 ">
+                  By Ellington Crises
                 </span>
-                <span className="text-sm leading-0.5 ">By Ellington Crises</span>
               </div>
               <div className="p-2 border border-l-0 border-b-0 border-r-0 self-stretch text-sm border-[#D2B48C] sm:border-t-0 flex justify-end">
                 <span className="mr-1 font-semibold ">26</span>
@@ -342,19 +418,19 @@ export default function Home() {
               </div>
             </div>
           </Link>
-          <Link
-            href="#"
-            className={` border border-[#D2B48C]`}
-          >
+          <Link href="#" className={` border border-[#D2B48C]`}>
             <div className="grid grid-cols-2 sm:grid-cols-[1fr_auto_auto] items-center ">
               <div className="col-span-2 sm:col-span-1 p-2">
-                <p className="font-medium xl:text-2xl">Character certificate and support letters for the criminal court</p>
+                <p className="font-medium xl:text-2xl">
+                  Character certificate and support letters for the criminal
+                  court
+                </p>
               </div>
               <div className="border border-b-0 border-l-0 border-[#D2B48C] sm:border-t-0 p-2  text-xs self-stretch">
-                <span className="block font-semibold">
-                  Family Law
+                <span className="block font-semibold">Family Law</span>
+                <span className="text-sm leading-0.5 ">
+                  By Ellington Crises
                 </span>
-                <span className="text-sm leading-0.5 ">By Ellington Crises</span>
               </div>
               <div className="p-2 border border-l-0 border-b-0 border-r-0 self-stretch text-sm border-[#D2B48C] sm:border-t-0 flex justify-end">
                 <span className="mr-1 font-semibold ">26</span>
@@ -365,25 +441,42 @@ export default function Home() {
         </div>
       </section>
       <section className="py-8 px-3 bg-[rgba(0,0,0,0.8)] relative">
-        <Image src={officePic} alt="office background pic" fill className="object-cover -z-10" />
+        <Image
+          src={officePic}
+          alt="office background pic"
+          fill
+          className="object-cover -z-10"
+        />
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center">
           <p className="text-sm text-[#d2b48c]">We are insanely good</p>
-          <p className="text-2xl font-bold text-amber-50 mb-6">Why Choose For Us</p>
+          <p className="text-2xl font-bold text-amber-50 mb-6">
+            Why Choose For Us
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-14 ">
             <div className="text-center">
-              <p className="text-5xl md:text-5xl text-[#d2b48c] font-extralight mb-1 text-center"><CountUpper number={32} />+</p>
-              <p className="text-amber-50 mb-3 md:text-sm">Year of Experience</p>
+              <p className="text-5xl md:text-5xl text-[#d2b48c] font-extralight mb-1 text-center">
+                <CountUpper number={32} />+
+              </p>
+              <p className="text-amber-50 mb-3 md:text-sm">
+                Year of Experience
+              </p>
             </div>
             <div className="text-center">
-              <p className="text-5xl md:text-5xl text-[#d2b48c] font-extralight mb-1 text-center"><CountUpper number={200} />M</p>
+              <p className="text-5xl md:text-5xl text-[#d2b48c] font-extralight mb-1 text-center">
+                <CountUpper number={200} />M
+              </p>
               <p className="text-amber-50 mb-3 md:text-sm">Millions of won</p>
             </div>
             <div className="text-center">
-              <p className="text-5xl md:text-5xl text-[#d2b48c] font-extralight mb-1 text-center">12/7</p>
+              <p className="text-5xl md:text-5xl text-[#d2b48c] font-extralight mb-1 text-center">
+                12/7
+              </p>
               <p className="text-amber-50 mb-3 md:text-sm">We are available</p>
             </div>
             <div className="text-center">
-              <p className="text-5xl md:text-5xl text-[#d2b48c] font-extralight mb-1 text-center"><CountUpper number={12} />+</p>
+              <p className="text-5xl md:text-5xl text-[#d2b48c] font-extralight mb-1 text-center">
+                <CountUpper number={12} />+
+              </p>
               <p className="text-amber-50 mb-3 md:text-sm">Awards & Listing</p>
             </div>
           </div>
@@ -392,9 +485,15 @@ export default function Home() {
       <section className="py-42 px-8 md:px-10 bg-[#b7945e] relative">
         <div className="max-w-screen-sm md:max-w-screen-lg  mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-14 md:justify-center md:shadow-lg md:p-8 md:bg-[rgba(255,255,255,0.1)] backdrop-blur-3xl">
           <div className="text-center mb-4 ">
-            <p className="text-sm text-black font-extralight mb-1 text-center md:text-left">Discuss your case with our auttorney</p>
-            <p className="text-2xl md:text-4xl text-amber-50 md:text-left">Talking about your case?</p>
-            <p className="text-amber-50  md:text-left md:text-2xl">Let`s talk about that.</p>
+            <p className="text-sm text-black font-extralight mb-1 text-center md:text-left">
+              Discuss your case with our auttorney
+            </p>
+            <p className="text-2xl md:text-4xl text-amber-50 md:text-left">
+              Talking about your case?
+            </p>
+            <p className="text-amber-50  md:text-left md:text-2xl">
+              Let`s talk about that.
+            </p>
             {/* <div>
                 <Image src={OmarAlShamsiSign} alt="owner signature"/>
               </div> */}
@@ -410,36 +509,41 @@ export default function Home() {
       <footer className="py-12 bg-[#fcf9f3] flex items-center justify-center">
         <Image src={logoDark} alt="Dark logo" className="w-38 h-auto" />
       </footer>
-
     </>
   );
 }
-
-
 
 function PracticeAreaCard({ data = [] }) {
   return (
     <>
       {data.map((practice, i) => {
-        console.log(i % 2 === 0 ? 0 : 1)
+        console.log(i % 2 === 0 ? 0 : 1);
         return (
           <Link
             href="#"
-            className={`p-6 border-l-0 border-t-0 border-b ${i % 2 === 0 ? 'sm:border-r border-r-0' : 'border-r-0 sm:border-r-0'
-              } border border-[#D2B48C]`}
+            className={`p-6 border-l-0 border-t-0 border-b ${
+              i % 2 === 0
+                ? "sm:border-r border-r-0"
+                : "border-r-0 sm:border-r-0"
+            } border border-[#D2B48C]`}
             key={practice.title}
           >
             <div className="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-6 sm:gap-8 items-center">
               <div className="w-20 h-20 mx-auto relative">
-                <Image src={practice.icon} alt="Legal solution icon" fill className="object-cover" />
+                <Image
+                  src={practice.icon}
+                  alt="Legal solution icon"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="text-center sm:text-left">
                 <h3
-                  className={`text-[#D2B48C] font-medium text-2xl xl:text-5xl mb-3 ${playfair.className}`}
+                  className={`text-[#D2B48C] font-medium text-2xl 2xl:text-5xl mb-3 ${playfair.className}`}
                 >
                   {practice.title}
                 </h3>
-                <p className="xl:text-xl">{practice.description}</p>
+                <p className="2xl:text-xl">{practice.description}</p>
               </div>
             </div>
           </Link>
