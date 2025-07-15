@@ -8,7 +8,7 @@ import { MobileMenu } from "./mobileMenu";
 
 export default function MainNav() {
   return (
-    <div className="flex items-center justify-center md:justify-between md:w-full px-10 py-6">
+    <div className="flex items-center justify-center md:justify-between md:w-full px-10 py-6 relative">
       <Image src={logo} width={50} alt="Omar al shamsi logo" />
       <div className="hidden md:block ">
         <NavLinks />
@@ -20,7 +20,7 @@ export default function MainNav() {
       >
         Free consulation
       </Button>
-      <div className="md:hidden">
+      <div className="md:hidden absolute right-4 ">
         <MobileMenu />
       </div>
     </div>

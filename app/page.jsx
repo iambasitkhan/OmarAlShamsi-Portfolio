@@ -47,7 +47,7 @@ export default function Home() {
     <>
       <header className="relative bg-gradient-to-t from-[#1d2723] to-[#d2b48c13] sm:bg-gradient-to-r sm:from-30%  sm:from-[#0f2020e4]  sm:to-[#ffffff00] sm:to-90% bg-top min-h-[100dvh]">
         <Image
-          src="/OmarAlShamsiPic.jpeg"
+          src="/omarAlShamsiPic.jpeg"
           alt="Omar Al Shamsi picture"
           fill
           className="-z-10 sm:hidden object-cover"
