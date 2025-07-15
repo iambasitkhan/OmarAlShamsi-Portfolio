@@ -22,7 +22,6 @@ import officePic from "@/public/office-pic.jpeg"
 
 // import icon25 from "@/public/Icons/icon-25.png";
 // import icon27 from "@/public/Icons/icon-27.png";
-// import icon2 from "@/public/Icons/icon-35.png";
 // import icon49 from "@/public/Icons/icon-49.png";
 import Link from "next/link";
 import signature from "@/public/owner-sig.png"
@@ -106,7 +105,7 @@ export default function Home() {
               <CardHeader className="flex flex-col items-center justify-center ">
                 <div className="h-18 md:h-16 w-16 mb-2 relative">
                   <Image
-                    src="/Icons/icon21.png"
+                    src="/Icons/Icon21.png"
                     alt="Legal solution icon"
                     fill
                     className="object-cover"
@@ -121,11 +120,11 @@ export default function Home() {
           <Card className="glassmorphic-white md:bg-[rgba(255,255,255,0.3)] rounded-none !border-none hover:scale-[1.1] transition-transform">
             <Link href="#">
               <CardHeader className="flex flex-col items-center justify-center">
-                {/* <Image
+                <Image
                   className="h-18 md:h-16 w-auto mb-2"
-                  src={icon2}
+                  src="/Icons/Icon35.png"
                   alt="Legal solution icon"
-                /> */}
+                />
                 <CardTitle className="font-bold tracking-wider uppercase text-sm">
                   Our Sectors
                 </CardTitle>
