@@ -104,11 +104,14 @@ export default function Home() {
           <Card className=" glassmorphic-white md:bg-[rgba(255,255,255,0.3)] rounded-none !border-none hover:scale-[1.1] transition-transform">
             <Link href="/practices">
               <CardHeader className="flex flex-col items-center justify-center ">
-                <Image
-                  src={icon21}
-                  alt="Legal solution icon"
-                  className="h-18 md:h-16 w-auto mb-2"
-                />
+                <div className="h-18 md:h-16 w-auto mb-2">
+                  <Image
+                    src="/Icons/icon-21.png"
+                    alt="Legal solution icon"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <CardTitle className="font-bold tracking-wider uppercase text-sm text-center">
                   Our Practices
                 </CardTitle>
