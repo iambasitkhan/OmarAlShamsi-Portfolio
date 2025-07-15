@@ -19,7 +19,7 @@ import sirOmar from "@/public/sirOmar4.jpg";
 import officePic from "@/public/office-pic.jpeg"
 // import icon18 from "@/public/Icons/icon-18.png";
 // import icon20 from "@/public/Icons/icon-20.png";
-import icon21 from "@/public/Icons/icon-21.png";
+// import icon21 from "@/public/Icons/icon-21.png";
 // import icon25 from "@/public/Icons/icon-25.png";
 // import icon27 from "@/public/Icons/icon-27.png";
 // import icon2 from "@/public/Icons/icon-35.png";
