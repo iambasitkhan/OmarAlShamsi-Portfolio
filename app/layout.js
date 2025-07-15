@@ -1,7 +1,7 @@
 // Example for App Router (app/layout.tsx or app/page.tsx)
 "use client"
 import { Lato, Playfair_Display } from "next/font/google";
-import SocialNav from "@/app/_components/socialNav";
+// import SocialNav from "@/app/_components/socialNav";
 import { useEffect, useState } from 'react';
 
 import "./globals.css";
@@ -50,7 +50,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${lato.className} `}>
       <body>
         <ReduxProvider>
-          {showSplash ? <SplashScreen /> : <><SocialNav />
+          {showSplash ? <SplashScreen /> : <>
+            {/* <SocialNav /> */}
             <MainNav />
             {children}</>}
 

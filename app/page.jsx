@@ -1,7 +1,7 @@
 import Image from "next/image";
-import OmarAlShamsiPic from "@/public/OmarAlShamsiPic.jpeg";
-import OmarAlShamsiPic1 from "@/public/SirOmar5.jpg";
-import image2 from "@/public/image2.jpeg";
+// import OmarAlShamsiPic from "@/public/OmarAlShamsiPic.jpeg";
+// import OmarAlShamsiPic1 from "@/public/SirOmar5.jpg";
+// import image2 from "@/public/image2.jpeg";
 import { playfair } from "./layout";
 import {
   Card,
@@ -57,7 +57,7 @@ export default function Home() {
   return (
     <>
       <header className="relative bg-gradient-to-t from-[#1d2723] to-[#d2b48c13] sm:bg-gradient-to-r sm:from-30%  sm:from-[#0f2020b1]  sm:to-[#ffffff00] sm:to-90% bg-top min-h-[100dvh]">
-        <Image
+        {/* <Image
           src={OmarAlShamsiPic}
           alt="Omar Al Shamsi picture"
           fill
@@ -68,7 +68,7 @@ export default function Home() {
           fill
           alt="Omar Al Shamsi picture"
           className="-z-10 hidden sm:block h-full object-cover"
-        />
+        /> */}
         <div className=" grid grid-cols-1 sm:grid-cols-2 max-w-screen-2xl mx-auto px-10  absolute top-1/2 -translate-y-1/2 2xl:translate-x-1/4 translate-x-4">
           <div className="sm:flex items-end sm:items-center justify-center hidden">
             <div className={`mb-8 ${playfair.className}`}>
