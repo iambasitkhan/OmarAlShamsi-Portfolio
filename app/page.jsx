@@ -31,6 +31,30 @@ import Map from "./_components/Map";
 
 const practiceAreas = [
   {
+    icon: "/Icons/Icon25.png",
+    title: "Criminal justice",
+    description:
+      "We offer legal defense and advisory services in criminal matters, assisting our clients in recovering their losses through court representation and legal settlement.",
+  },
+  {
+    icon: "/Icons/Icon27.png",
+    title: "Employment labor",
+    description:
+      "We protect your rights in the workplace by providing legal advice, dispute resolution, and representation for employers and employees.",
+  },
+  {
+    icon: "/Icons/Icon49.png",
+    title: "Civil litigation",
+    description:
+      "We provide expert representation in all types of civil disputes, ensuring your rights are protected and justice is served.",
+  },
+  {
+    icon: "/Icons/Icon23.png",
+    title: "Company commercial",
+    description:
+      "We offer legal guidance on company formation, mergers, and structuring tailored to your business goals.",
+  },
+  {
     icon: "/Icons/Icon20.png",
     title: "Litigation",
     description:
@@ -43,38 +67,26 @@ const practiceAreas = [
       "Our legal team helps you claim compensation for injuries caused by accidents, negligence, or unsafe conditions.",
   },
   {
-    icon: "/Icons/Icon49.png",
-    title: "Civil litigation",
-    description:
-      "We provide expert representation in all types of civil disputes, ensuring your rights are protected and justice is served.",
-  },
-  {
     icon: "/Icons/Icon06.png",
     title: "Consumer issues",
     description:
       "We handle legal matters related to consumer rights, product liability, and commercial franchising across the UAE and GCC.",
   },
   {
-    icon: "/Icons/Icon23.png",
-    title: "Company commercial",
-    description:
-      "We offer legal guidance on company formation, mergers, and structuring tailored to your business goals.",
-  },
-  {
-    icon: "/Icons/Icon27.png",
-    title: "Employment labor",
-    description:
-      "We protect your rights in the workplace by providing legal advice, dispute resolution, and representation for employers and employees.",
-  },
-  {
-    icon: "/Icons/Icon25.png",
-    title: "Criminal justice",
-    description:
-      "We offer legal defense and advisory services in criminal matters, assisting our clients in recovering their losses through court representation and legal settlement.",
-  },
-  {
     icon: "/Icons/Icon16.png",
     title: "Intellectual property",
+    description:
+      "We provide defense and legal advice in criminal cases, and help clients recover losses through legal settlement methods.",
+  },
+  {
+    icon: "/Icons/Icon33.png",
+    title: "Rental Disputes",
+    description:
+      "We provide defense and legal advice in criminal cases, and help clients recover losses through legal settlement methods.",
+  },
+  {
+    icon: "/Icons/Icon05.png",
+    title: "Personal Status",
     description:
       "We provide defense and legal advice in criminal cases, and help clients recover losses through legal settlement methods.",
   },
@@ -514,10 +526,10 @@ export default function Home() {
 }
 
 function PracticeAreaCard({ data = [] }) {
+  const dataLength = data.length - 1;
   return (
     <>
-      {data.map((practice, i) => {
-        console.log(i % 2 === 0 ? 0 : 1);
+      {data.map((practice, i, data) => {
         return (
           <Link
             href="#"
@@ -525,7 +537,9 @@ function PracticeAreaCard({ data = [] }) {
               i % 2 === 0
                 ? "sm:border-r border-r-0"
                 : "border-r-0 sm:border-r-0"
-            } border border-[#D2B48C]`}
+            } border border-[#D2B48C] ${
+              i >= dataLength - 1 ? "border-b-0" : ""
+            }`}
             key={practice.title}
           >
             <div className="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-6 sm:gap-8 items-center">
