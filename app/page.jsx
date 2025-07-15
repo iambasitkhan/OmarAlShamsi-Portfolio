@@ -12,23 +12,23 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import icon1 from "@/public/Icons/icon-01.png";
-import icon4 from "@/public/Icons/icon-02.png";
+// import icon1 from "@/public/Icons/icon-01.png";
+// import icon4 from "@/public/Icons/icon-02.png";
 import icon3 from "@/public/Icons/icon-03.png";
 import sirOmar from "@/public/sirOmar4.jpg";
 import officePic from "@/public/office-pic.jpeg"
-import icon18 from "@/public/Icons/icon-18.png";
+// import icon18 from "@/public/Icons/icon-18.png";
 import icon20 from "@/public/Icons/icon-20.png";
 import icon21 from "@/public/Icons/icon-21.png";
 import icon25 from "@/public/Icons/icon-25.png";
 import icon27 from "@/public/Icons/icon-27.png";
-import icon2 from "@/public/Icons/icon-35.png";
-import icon49 from "@/public/Icons/icon-49.png";
+// import icon2 from "@/public/Icons/icon-35.png";
+// import icon49 from "@/public/Icons/icon-49.png";
 import Link from "next/link";
 import signature from "@/public/owner-sig.png"
 import logoDark from "@/public/logo-01.png"
 
-import OmarAlShamsiSign from "@/public/owner-sig.png"
+// import OmarAlShamsiSign from "@/public/owner-sig.png"
 import medicalNeglegence from "@/public/casestudyImage2.jpg"
 import CardAccidentImage from "@/public/car-accident.webp"
 import brainInjury from "@/public/brainInjury.jpg"
@@ -102,11 +102,11 @@ export default function Home() {
           <Card className=" glassmorphic-white md:bg-[rgba(255,255,255,0.3)] rounded-none !border-none hover:scale-[1.1] transition-transform">
             <Link href="/practices">
               <CardHeader className="flex flex-col items-center justify-center ">
-                <Image
+                {/* <Image
                   src={icon21}
                   alt="Legal solution icon"
                   className="h-18 md:h-16 w-auto mb-2"
-                />
+                /> */}
                 <CardTitle className="font-bold tracking-wider uppercase text-sm text-center">
                   Our Practices
                 </CardTitle>
@@ -116,11 +116,11 @@ export default function Home() {
           <Card className="glassmorphic-white md:bg-[rgba(255,255,255,0.3)] rounded-none !border-none hover:scale-[1.1] transition-transform">
             <Link href="#">
               <CardHeader className="flex flex-col items-center justify-center">
-                <Image
+                {/* <Image
                   className="h-18 md:h-16 w-auto mb-2"
                   src={icon2}
                   alt="Legal solution icon"
-                />
+                /> */}
                 <CardTitle className="font-bold tracking-wider uppercase text-sm">
                   Our Sectors
                 </CardTitle>
@@ -130,11 +130,11 @@ export default function Home() {
           <Card className="glassmorphic-white md:bg-[rgba(255,255,255,0.3)] rounded-none !border-none hover:scale-[1.1] transition-transform">
             <Link href="#">
               <CardHeader className="flex flex-col items-center justify-center">
-                <Image
+                {/* <Image
                   className="h-18 md:h-16 w-auto mb-2"
                   src={icon49}
                   alt="Legal solution icon"
-                />
+                /> */}
                 <CardTitle className="font-bold tracking-wider uppercase text-sm">
                   Lawyers
                 </CardTitle>
@@ -144,11 +144,11 @@ export default function Home() {
           <Card className="glassmorphic-white md:bg-[rgba(255,255,255,0.3)] rounded-none !border-none hover:scale-[1.1] transition-transform">
             <Link href="#">
               <CardHeader className="flex flex-col items-center justify-center">
-                <Image
+                {/* <Image
                   className="h-18 md:h-16 w-auto mb-2"
                   src={icon4}
                   alt="Legal solution icon"
-                />
+                /> */}
                 <CardTitle className="font-bold tracking-wider uppercase text-sm text-center">
                   Clients project
                 </CardTitle>
