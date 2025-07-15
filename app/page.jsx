@@ -62,7 +62,7 @@ export default function Home() {
           <div className="sm:flex items-end sm:items-center justify-center hidden">
             <div className={`mb-8 ${playfair.className}`}>
               <h2 className={`text-3xl lg:text-5xl text-[#D2B48C] mb-3`}>
-                I`m <span className="text-4xl lg:text-6xl">Omar Al Shamsi</span>
+                I`m <span className=" text-4xl lg:text-6xl uppercase tracking-wider">Omar AlShamsi</span>
               </h2>
               <h1 className="text-xl lg:text-2xl text-amber-50">
                 Your Trusted Legal Partner in the UAE.
