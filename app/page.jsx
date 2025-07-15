@@ -19,7 +19,7 @@ import sirOmar from "@/public/sirOmar4.jpg";
 import officePic from "@/public/office-pic.jpeg"
 // import icon18 from "@/public/Icons/icon-18.png";
 // import icon20 from "@/public/Icons/icon-20.png";
-// import icon21 from "@/public/Icons/icon-21.png";
+import icon21 from "@/public/Icons/icon-21.png";
 // import icon25 from "@/public/Icons/icon-25.png";
 // import icon27 from "@/public/Icons/icon-27.png";
 // import icon2 from "@/public/Icons/icon-35.png";
@@ -104,11 +104,11 @@ export default function Home() {
           <Card className=" glassmorphic-white md:bg-[rgba(255,255,255,0.3)] rounded-none !border-none hover:scale-[1.1] transition-transform">
             <Link href="/practices">
               <CardHeader className="flex flex-col items-center justify-center ">
-                {/* <Image
+                <Image
                   src={icon21}
                   alt="Legal solution icon"
                   className="h-18 md:h-16 w-auto mb-2"
-                /> */}
+                />
                 <CardTitle className="font-bold tracking-wider uppercase text-sm text-center">
                   Our Practices
                 </CardTitle>
