@@ -36,7 +36,7 @@ const practiceAreas = [
   { icon: "/Icons/Icon27.png", title: "Personal injury", description: "Our legal team helps you claim compensation for injuries caused by accidents, negligence, or unsafe conditions." },
   { icon: "/Icons/Icon21.png", title: "Civil litigation", description: "We provide expert representation in all types of civil disputes, ensuring your rights are protected and justice is served." },
   { icon: "/Icons/Icon20.png", title: "Consumer issues", description: "We handle legal matters related to consumer rights, product liability, and commercial franchising across the UAE and GCC." },
-  { icon: "/Icons/Icon3.png", title: "Company commercial", description: "We offer legal guidance on company formation, mergers, and structuring tailored to your business goals." },
+  { icon: "/Icons/Icon03.png", title: "Company commercial", description: "We offer legal guidance on company formation, mergers, and structuring tailored to your business goals." },
   { icon: "/Icons/Icon25.png", title: "Employment labor", description: "We protect your rights in the workplace by providing legal advice, dispute resolution, and representation for employers and employees." },
   { icon: "/Icons/Icon21.png", title: "Criminal justice", description: "We offer legal defense and advisory services in criminal matters, assisting our clients in recovering their losses through court representation and legal settlement." },
   { icon: "/Icons/Icon20.png", title: "Intellectual property", description: "We provide defense and legal advice in criminal cases, and help clients recover losses through legal settlement methods." }]
@@ -45,7 +45,7 @@ const practiceAreas = [
 export default function Home() {
   return (
     <>
-      <header className="relative bg-gradient-to-t from-[#1d2723] to-[#d2b48c13] sm:bg-gradient-to-r sm:from-30%  sm:from-[#0f2020b1]  sm:to-[#ffffff00] sm:to-90% bg-top min-h-[100dvh]">
+      <header className="relative bg-gradient-to-t from-[#1d2723] to-[#d2b48c13] sm:bg-gradient-to-r sm:from-30%  sm:from-[#0f2020e4]  sm:to-[#ffffff00] sm:to-90% bg-top min-h-[100dvh]">
         <Image
           src="/OmarAlShamsiPic.jpeg"
           alt="Omar Al Shamsi picture"
@@ -110,11 +110,14 @@ export default function Home() {
           <Card className="glassmorphic-white md:bg-[rgba(255,255,255,0.3)] rounded-none !border-none hover:scale-[1.1] transition-transform">
             <Link href="#">
               <CardHeader className="flex flex-col items-center justify-center">
-                <Image
-                  className="h-18 md:h-16 w-auto mb-2"
-                  src="/Icons/Icon35.png"
-                  alt="Legal solution icon"
-                />
+                <div className="h-18 md:h-16 w-16 mb-2 relative">
+                  <Image
+                    className="object-cover"
+                    src="/Icons/Icon35.png"
+                    alt="Legal solution icon"
+                    fill
+                  />
+                </div>
                 <CardTitle className="font-bold tracking-wider uppercase text-sm">
                   Our Sectors
                 </CardTitle>
@@ -124,11 +127,14 @@ export default function Home() {
           <Card className="glassmorphic-white md:bg-[rgba(255,255,255,0.3)] rounded-none !border-none hover:scale-[1.1] transition-transform">
             <Link href="#">
               <CardHeader className="flex flex-col items-center justify-center">
-                <Image
-                  className="h-18 md:h-16 w-auto mb-2"
-                  src="/Icons/Icon49.png"
-                  alt="Legal solution icon"
-                />
+                <div className="h-18 md:h-16 w-16 mb-2 relative">
+                  <Image
+                    className="object-cover"
+                    src="/Icons/Icon49.png"
+                    alt="Legal solution icon"
+                    fill
+                  />
+                </div>
                 <CardTitle className="font-bold tracking-wider uppercase text-sm">
                   Lawyers
                 </CardTitle>
@@ -138,11 +144,15 @@ export default function Home() {
           <Card className="glassmorphic-white md:bg-[rgba(255,255,255,0.3)] rounded-none !border-none hover:scale-[1.1] transition-transform">
             <Link href="#">
               <CardHeader className="flex flex-col items-center justify-center">
-                <Image
-                  className="h-18 md:h-16 w-auto mb-2"
-                  src="/Icons/Icon02.png"
-                  alt="Legal solution icon"
-                />
+                <div className="h-18 md:h-16 w-16 mb-2 relative">
+
+                  <Image
+                    className="object-cover"
+                    src="/Icons/Icon02.png"
+                    alt="Legal solution icon"
+                    fill
+                  />
+                </div>
                 <CardTitle className="font-bold tracking-wider uppercase text-sm text-center">
                   Clients project
                 </CardTitle>
@@ -298,18 +308,7 @@ export default function Home() {
           >
             <div className="grid grid-cols-2 sm:grid-cols-[1fr_auto_auto] items-center ">
               <div className="col-span-2 sm:col-span-1 p-2">
-                <p className="font-semibold xl:text-2xl">Character certificate and support letters for the criminal court sjdhfkajh
-                  sdfkhjasd
-                  lkfhaskdjhakjsdh
-                  fkjasdhl
-                  hajsdfja
-                  hsl
-                  dk
-                  jhfask
-                  jdfhl
-                  akjsdh
-                  faks
-                  ldhf</p>
+                <p className="font-medium xl:text-2xl">Character certificate and support letters for the criminal court</p>
               </div>
               <div className="border border-b-0 border-l-0 border-[#D2B48C] sm:border-t-0 p-2  text-xs self-stretch sm:flex sm:flex-col">
                 <span className="block font-semibold sm:mb-2">
@@ -329,7 +328,7 @@ export default function Home() {
           >
             <div className="grid grid-cols-2 sm:grid-cols-[1fr_auto_auto] items-center ">
               <div className="col-span-2 sm:col-span-1 p-2">
-                <p className="font-semibold">Character certificate and support letters for the criminal court</p>
+                <p className="font-medium xl:text-2xl">Character certificate and support letters for the criminal court</p>
               </div>
               <div className="border border-b-0 border-l-0 border-[#D2B48C] sm:border-t-0 p-2  text-xs self-stretch">
                 <span className="block font-semibold">
@@ -349,7 +348,7 @@ export default function Home() {
           >
             <div className="grid grid-cols-2 sm:grid-cols-[1fr_auto_auto] items-center ">
               <div className="col-span-2 sm:col-span-1 p-2">
-                <p className="font-semibold">Character certificate and support letters for the criminal court</p>
+                <p className="font-medium xl:text-2xl">Character certificate and support letters for the criminal court</p>
               </div>
               <div className="border border-b-0 border-l-0 border-[#D2B48C] sm:border-t-0 p-2  text-xs self-stretch">
                 <span className="block font-semibold">
@@ -431,8 +430,8 @@ function PracticeAreaCard({ data = [] }) {
             key={practice.title}
           >
             <div className="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-6 sm:gap-8 items-center">
-              <div className="w-20 mx-auto">
-                <Image src={practice.icon} alt="Legal solution icon" />
+              <div className="w-20 h-20 mx-auto relative">
+                <Image src={practice.icon} alt="Legal solution icon" fill className="object-cover" />
               </div>
               <div className="text-center sm:text-left">
                 <h3
