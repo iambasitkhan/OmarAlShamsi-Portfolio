@@ -1,13 +1,13 @@
 // Example for App Router (app/layout.tsx or app/page.tsx)
 "use client"
 import { Lato, Playfair_Display } from "next/font/google";
-import SocialNav from "@/app/_components/socialNav";
 import { useEffect, useState } from 'react';
 
 import "./globals.css";
 import MainNav from "./_components/mainNav";
 import ReduxProvider from "./providers/ReduxProvider";
 import SplashScreen from "./_components/SplashScreen";
+import SocialNav from "./_components/SocialNav";
 
 const lato = Lato({
   subsets: ["latin"],
