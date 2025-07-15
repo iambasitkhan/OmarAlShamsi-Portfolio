@@ -57,12 +57,12 @@ export default function Home() {
   return (
     <>
       <header className="relative bg-gradient-to-t from-[#1d2723] to-[#d2b48c13] sm:bg-gradient-to-r sm:from-30%  sm:from-[#0f2020b1]  sm:to-[#ffffff00] sm:to-90% bg-top min-h-[100dvh]">
-        {/* <Image
-          src={OmarAlShamsiPic}
+        <Image
+          src="/OmarAlShamsiPic.jpeg"
           alt="Omar Al Shamsi picture"
           fill
           className="-z-10 sm:hidden object-cover"
-        /> */}
+        />
         <Image
           src="/SirOmar5.jpg"
           fill
