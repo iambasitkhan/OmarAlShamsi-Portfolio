@@ -106,7 +106,7 @@ export default function Home() {
               <CardHeader className="flex flex-col items-center justify-center ">
                 <div className="h-18 md:h-16 w-16 mb-2 relative">
                   <Image
-                    src="/Icons/icon-21.png"
+                    src="/Icons/icon21.png"
                     alt="Legal solution icon"
                     fill
                     className="object-cover"
