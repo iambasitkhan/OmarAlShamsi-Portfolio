@@ -1,7 +1,7 @@
 // Example for App Router (app/layout.tsx or app/page.tsx)
 "use client"
 import { Lato, Playfair_Display } from "next/font/google";
-// import SocialNav from "@/app/_components/socialNav";
+import SocialNav from "@/app/_components/socialNav";
 import { useEffect, useState } from 'react';
 
 import "./globals.css";
@@ -51,9 +51,10 @@ export default function RootLayout({ children }) {
       <body>
         <ReduxProvider>
           {showSplash ? <SplashScreen /> : <>
-            {/* <SocialNav /> */}
+            <SocialNav />
             <MainNav />
-            {children}</>}
+            {children}
+          </>}
 
         </ReduxProvider>
       </body>
