@@ -14,14 +14,14 @@ import {
 } from "@/components/ui/card";
 // import icon1 from "@/public/Icons/icon-01.png";
 // import icon4 from "@/public/Icons/icon-02.png";
-import icon3 from "@/public/Icons/icon-03.png";
+// import icon3 from "@/public/Icons/icon-03.png";
 import sirOmar from "@/public/sirOmar4.jpg";
 import officePic from "@/public/office-pic.jpeg"
 // import icon18 from "@/public/Icons/icon-18.png";
-import icon20 from "@/public/Icons/icon-20.png";
-import icon21 from "@/public/Icons/icon-21.png";
-import icon25 from "@/public/Icons/icon-25.png";
-import icon27 from "@/public/Icons/icon-27.png";
+// import icon20 from "@/public/Icons/icon-20.png";
+// import icon21 from "@/public/Icons/icon-21.png";
+// import icon25 from "@/public/Icons/icon-25.png";
+// import icon27 from "@/public/Icons/icon-27.png";
 // import icon2 from "@/public/Icons/icon-35.png";
 // import icon49 from "@/public/Icons/icon-49.png";
 import Link from "next/link";
@@ -41,15 +41,17 @@ import CountUpper from "./_components/CountUp";
 import ContactUs from "./_components/forms/ContactUs";
 import Map from "./_components/Map";
 
-const practiceAreas = [
-  { icon: icon20, title: "Litigation", description: " We represent individuals, businesses, and institutions in legal disputes through skilled litigation and advocacy." },
-  { icon: icon27, title: "Personal injury", description: "Our legal team helps you claim compensation for injuries caused by accidents, negligence, or unsafe conditions." },
-  { icon: icon21, title: "Civil litigation", description: "We provide expert representation in all types of civil disputes, ensuring your rights are protected and justice is served." },
-  { icon: icon20, title: "Consumer issues", description: "We handle legal matters related to consumer rights, product liability, and commercial franchising across the UAE and GCC." },
-  { icon: icon3, title: "Company commercial", description: "We offer legal guidance on company formation, mergers, and structuring tailored to your business goals." },
-  { icon: icon25, title: "Employment labor", description: "We protect your rights in the workplace by providing legal advice, dispute resolution, and representation for employers and employees." },
-  { icon: icon21, title: "Criminal justice", description: "We offer legal defense and advisory services in criminal matters, assisting our clients in recovering their losses through court representation and legal settlement." },
-  { icon: icon20, title: "Intellectual property", description: "We provide defense and legal advice in criminal cases, and help clients recover losses through legal settlement methods." }]
+// const practiceAreas = [
+//   { icon: icon20, title: "Litigation", description: " We represent individuals, businesses, and institutions in legal disputes through skilled litigation and advocacy." },
+//   { icon: icon27, title: "Personal injury", description: "Our legal team helps you claim compensation for injuries caused by accidents, negligence, or unsafe conditions." },
+//   { icon: icon21, title: "Civil litigation", description: "We provide expert representation in all types of civil disputes, ensuring your rights are protected and justice is served." },
+//   { icon: icon20, title: "Consumer issues", description: "We handle legal matters related to consumer rights, product liability, and commercial franchising across the UAE and GCC." },
+//   // { icon: icon3, title: "Company commercial", description: "We offer legal guidance on company formation, mergers, and structuring tailored to your business goals." },
+//   { icon: icon25, title: "Employment labor", description: "We protect your rights in the workplace by providing legal advice, dispute resolution, and representation for employers and employees." },
+//   { icon: icon21, title: "Criminal justice", description: "We offer legal defense and advisory services in criminal matters, assisting our clients in recovering their losses through court representation and legal settlement." },
+//   { icon: icon20, title: "Intellectual property", description: "We provide defense and legal advice in criminal cases, and help clients recover losses through legal settlement methods." }]
+
+const practiceAreas = [];
 
 export default function Home() {
   return (
