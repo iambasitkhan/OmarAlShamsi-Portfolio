@@ -12,20 +12,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import icon1 from "@/public/Icons/icon-01.png";
-import icon3 from "@/public/Icons/icon-03.png";
 import sirOmar from "@/public/sirOmar4.jpg";
 import officePic from "@/public/office-pic.jpeg"
-import icon18 from "@/public/Icons/icon-18.png";
-import icon20 from "@/public/Icons/icon-20.png";
-
-import icon25 from "@/public/Icons/icon-25.png";
-import icon27 from "@/public/Icons/icon-27.png";
 import Link from "next/link";
 import signature from "@/public/owner-sig.png"
 import logoDark from "@/public/logo-01.png"
 
-import OmarAlShamsiSign from "@/public/owner-sig.png"
+// import OmarAlShamsiSign from "@/public/owner-sig.png"
 import medicalNeglegence from "@/public/casestudyImage2.jpg"
 import CardAccidentImage from "@/public/car-accident.webp"
 import brainInjury from "@/public/brainInjury.jpg"
