@@ -2,8 +2,6 @@ import Link from "next/link";
 import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react";
 import image1 from "@/public/image1.jpeg";
 
-
-
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -34,7 +32,7 @@ export function NavLinks() {
       <NavigationMenuList className="flex-col justify-center w-full md:flex-row">
         <NavigationMenuItem className="border-none">
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/docs">Home</Link>
+            <Link href="/">Home</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
@@ -49,31 +47,34 @@ export function NavLinks() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Our services</NavigationMenuTrigger>
-          <NavigationMenuContent className="bg-[rgba(255, 255, 255, 0.21)] backdrop-blur-xl">
-            <Tabs defaultValue="practice">
+          <NavigationMenuContent className=" bg-[rgba(0,0,0,0.5)] backdrop-blur-2xl">
+            <Tabs defaultValue="practice" className="text-white">
               <TabsList>
                 <TabsTrigger
                   value="practice"
-                  className="font-semibold tracking-wider"
+                  className="font-semibold tracking-wider cursor-pointer"
                 >
                   Pratices
                 </TabsTrigger>
                 <TabsTrigger
                   value="sectors"
-                  className="font-semibold tracking-wider"
+                  className="font-semibold tracking-wider cursor-pointer"
                 >
                   Sectors
                 </TabsTrigger>
                 <TabsTrigger
                   value="lawers"
-                  className="font-semibold tracking-wider"
+                  className="font-semibold tracking-wider cursor-pointer"
                 >
                   Lawers
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="practice">
-                <Card className="grid grid-cols-[repeat(3,auto)] gap-x-7 gap-y-4 text-white     items-center space-x-4 text-sm p-4 border-[#fffbeb45]">
-                  <Link href="/practices" className="tracking-wider font-light  whitespace-nowrap">
+                <Card className="grid grid-cols-[repeat(3,auto)] gap-x-7 gap-y-4 text-white     items-center space-x-4 text-sm p-4 border-[#fffbeb45] rounded-md">
+                  <Link
+                    href="/practices"
+                    className="tracking-wider font-light  whitespace-nowrap "
+                  >
                     Arbitration
                   </Link>
                   <p className="tracking-wider font-light  whitespace-nowrap">

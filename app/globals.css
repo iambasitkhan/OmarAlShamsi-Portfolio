@@ -238,3 +238,9 @@ div[data-slot="navigation-menu-viewport"] {
 .practiceBox:hover .lowerSection {
   transform: translateY(0%);
 }
+
+
+.activeTabMenu[state=active]{
+  background-color: black !important;
+
+}
