@@ -87,6 +87,7 @@ const practices = [
     mainTitle: "Commercial",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/commercial",
   },
   {
     id: 5,
@@ -94,6 +95,7 @@ const practices = [
     mainTitle: "Competition",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/competition",
   },
   {
     id: 6,
@@ -101,6 +103,7 @@ const practices = [
     mainTitle: "Compliance, Investigation and White-Coller Crims",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/compliance-investigation-and-white-coller-crims",
   },
   {
     id: 7,
@@ -108,6 +111,7 @@ const practices = [
     mainTitle: "Construction and Infrastructure",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/construction-and-infrastructure",
   },
   {
     id: 8,
@@ -115,6 +119,7 @@ const practices = [
     mainTitle: "Corporate / Mergers and Aquisitions",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/corporate",
   },
   {
     id: 9,
@@ -122,6 +127,7 @@ const practices = [
     mainTitle: "Corporate Services",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/corporate-services",
   },
   {
     id: 10,
@@ -129,6 +135,7 @@ const practices = [
     mainTitle: "Corporate Structuring",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/corporate-structuring",
   },
   {
     id: 11,
@@ -136,6 +143,7 @@ const practices = [
     mainTitle: "Digital & Data",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/digital-and-data",
   },
   {
     id: 12,
@@ -143,6 +151,7 @@ const practices = [
     mainTitle: "Dispute Resolution",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/disputed-resolution",
   },
   {
     id: 13,
@@ -150,6 +159,7 @@ const practices = [
     mainTitle: "Employement and Incentives",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/employment-and-incentives",
   },
   {
     id: 14,
@@ -157,6 +167,7 @@ const practices = [
     mainTitle: "Family Business",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/family-business",
   },
   {
     id: 15,
@@ -164,6 +175,7 @@ const practices = [
     mainTitle: "Innovation, Patents & Industrial Property (3IP)",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/inovation",
   },
   {
     id: 16,
@@ -171,6 +183,7 @@ const practices = [
     mainTitle: "Insurance",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/insurance",
   },
   {
     id: 17,
@@ -178,6 +191,7 @@ const practices = [
     mainTitle: "Intellectual Property",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/intellectual-property",
   },
   {
     id: 18,
@@ -185,6 +199,7 @@ const practices = [
     mainTitle: "International Litigation Group",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/international-litigation",
   },
   {
     id: 19,
@@ -192,6 +207,7 @@ const practices = [
     mainTitle: "Lagislative Drafting",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/lagislative-drafting",
   },
   {
     id: 20,
@@ -199,6 +215,7 @@ const practices = [
     mainTitle: "Litigation",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/litigation",
   },
   {
     id: 21,
@@ -206,6 +223,7 @@ const practices = [
     mainTitle: "Mediation",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/mediation",
   },
   {
     id: 22,
@@ -213,6 +231,7 @@ const practices = [
     mainTitle: "Private Client Services",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/private-client-services",
   },
   {
     id: 23,
@@ -220,6 +239,7 @@ const practices = [
     mainTitle: "Private Equity",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/private-equity",
   },
   {
     id: 24,
@@ -227,6 +247,7 @@ const practices = [
     mainTitle: "Private Notery",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/private-notery",
   },
   {
     id: 25,
@@ -234,6 +255,7 @@ const practices = [
     mainTitle: "Projects",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/projects",
   },
   {
     id: 26,
@@ -241,6 +263,7 @@ const practices = [
     mainTitle: "Real State",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/real-state",
   },
   {
     id: 27,
@@ -248,6 +271,7 @@ const practices = [
     mainTitle: "Regulatory",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/regulatory",
   },
   {
     id: 28,
@@ -255,6 +279,7 @@ const practices = [
     mainTitle: "Shipping, Aviations & Logistics",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/shipping-aviation-and-logistics",
   },
   {
     id: 29,
@@ -262,6 +287,7 @@ const practices = [
     mainTitle: "Sustainable Business",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/sustainable-business",
   },
   {
     id: 30,
@@ -269,6 +295,7 @@ const practices = [
     mainTitle: "Tax",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/banking-and-finance",
   },
   {
     id: 31,
@@ -276,6 +303,7 @@ const practices = [
     mainTitle: "Turnaround, Restructuring and Inslovency",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/turnaround-restructing-inslovency",
   },
   {
     id: 32,
@@ -283,6 +311,7 @@ const practices = [
     mainTitle: "Venture Capital and Emerging Companies",
     subTitle: "Banking and Finance",
     description: "With three decades of collectively experience",
+    href: "/practices/venture-capital",
   },
 ];
 
@@ -304,7 +333,7 @@ export default function PracticePage() {
           </p>
         </div>
       </header>
-      <section className="max-w-screen-2xl mx-auto px-8 py-12 mb-20">
+      <section className="container mx-auto px-8 py-12 mb-20">
         <Breadcrumb className="mb-5">
           <BreadcrumbList>
             <BreadcrumbItem className="text-[#b7945e]">
@@ -332,9 +361,6 @@ export default function PracticePage() {
           })}
         </div>
       </section>
-      <section>
-        <Image src={penFooterLogo} alt="pen footer logo" />
-      </section>
     </main>
   );
 }
@@ -346,9 +372,9 @@ function PracticeBox({ practice }) {
       href={href}
       className="p-6 px-12 bg-[#b7935e8a] flex flex-col items-center justify-center practiceBox"
     >
-      <div className="h-full upperSection">
+      <div className="h-full upperSection flex flex-col items-center">
         <Image src={icon} alt="icon1" className="w-16" />
-        <p className="font-bold">{mainTitle}</p>
+        <p className="font-bold text-center mt-auto">{mainTitle}</p>
       </div>
       <div className="text-center lowerSection">
         <p className="font-semibold text-sm">{subTitle}</p>

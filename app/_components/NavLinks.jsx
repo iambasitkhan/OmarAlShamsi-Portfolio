@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react";
-import image1 from "@/public/image1.jpeg";
 
 import {
   NavigationMenu,
@@ -11,24 +9,12 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import Image from "next/image";
-
-import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import { Card } from "@/components/ui/card";
 
 export function NavLinks() {
   return (
-    <NavigationMenu className="max-w-auto ">
+    <NavigationMenu className="max-w-auto z-[99999]">
       <NavigationMenuList className="flex-col justify-center w-full md:flex-row">
         <NavigationMenuItem className="border-none">
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
@@ -47,7 +33,7 @@ export function NavLinks() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Our services</NavigationMenuTrigger>
-          <NavigationMenuContent className=" bg-[rgba(0,0,0,0.5)] backdrop-blur-2xl">
+          <NavigationMenuContent className=" bg-[rgba(0,0,0,0.5)] backdrop-blur-2xl ">
             <Tabs defaultValue="practice" className="text-white">
               <TabsList>
                 <TabsTrigger
@@ -109,7 +95,7 @@ export function NavLinks() {
                   </p>
                 </Card>
               </TabsContent>
-              <TabsContent value="sectors">
+              {/* <TabsContent value="sectors">
                 <Card className="grid grid-cols-[repeat(3,auto)] gap-x-7 gap-y-4 text-white     items-center space-x-4 text-sm p-4 border-[#fffbeb45]">
                   <p className="tracking-wider font-light  whitespace-nowrap">
                     Defence and Aerospace
@@ -148,25 +134,18 @@ export function NavLinks() {
                     Sports & Events Management
                   </p>
                 </Card>
-              </TabsContent>
-              <TabsContent value="lawers">
-                <Card className="grid grid-cols-[repeat(3,auto)] gap-x-7 gap-y-4 text-white     items-center space-x-4 text-sm p-4 border-[#fffbeb45]">
-                  <p className="tracking-wider font-light  whitespace-nowrap">
-                    Me
-                  </p>
-                </Card>
-              </TabsContent>
+              </TabsContent> */}
             </Tabs>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
             <Link href="/docs">Customer login</Link>
           </NavigationMenuLink>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/docs">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>

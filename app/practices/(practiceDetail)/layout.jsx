@@ -1,3 +1,4 @@
+import ContactUs from "@/app/_components/forms/ContactUs";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -26,9 +27,11 @@ export default function Layout({ children }) {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <div className="grid grid-cols-[1fr_auto]">
+        <div className="grid grid-cols-[1fr_auto] gap-12 items-start">
           {children}
-          <div>Contact form</div>
+          <div className="min-w-sm bg-[rgba(255,255,255,0.5)] backdrop-blur-2xl  py-4 px-6 rounded-lg">
+            <ContactUs />
+          </div>
         </div>
       </div>
     </section>

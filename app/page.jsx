@@ -16,7 +16,6 @@ import sirOmar from "@/public/sirOmar4.jpg";
 import officePic from "@/public/office-pic.jpeg";
 import Link from "next/link";
 import signature from "@/public/owner-sig.png";
-import logoDark from "@/public/logo-01.png";
 
 // import OmarAlShamsiSign from "@/public/owner-sig.png"
 import medicalNeglegence from "@/public/casestudyImage2.jpg";
@@ -518,9 +517,6 @@ export default function Home() {
       <section>
         <Map />
       </section>
-      <footer className="py-12 bg-[#fcf9f3] flex items-center justify-center">
-        <Image src={logoDark} alt="Dark logo" className="w-38 h-auto" />
-      </footer>
     </>
   );
 }

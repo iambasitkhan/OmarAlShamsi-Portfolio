@@ -1,13 +1,17 @@
 // Example for App Router (app/layout.tsx or app/page.tsx)
-"use client"
+"use client";
 import { Lato, Playfair_Display } from "next/font/google";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
+
+import whatsappIcon from "@/public/socialIcons/whatsappIcon.png";
 
 import "./globals.css";
 import MainNav from "./_components/mainNav";
 import ReduxProvider from "./providers/ReduxProvider";
 import SplashScreen from "./_components/SplashScreen";
 import SocialNav from "./_components/SocialNav";
+import Footer from "./_components/Footer";
+import Image from "next/image";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -31,7 +35,7 @@ export default function RootLayout({ children }) {
   const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
-    const hasSeenSplash = sessionStorage.getItem('hasSeenSplash');
+    const hasSeenSplash = sessionStorage.getItem("hasSeenSplash");
 
     if (!hasSeenSplash) {
       // Show splash screen on first load
@@ -48,14 +52,25 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className={`${lato.className} `}>
-      <body>
+      <body className="relative">
         <ReduxProvider>
-          {showSplash ? <SplashScreen /> : <>
-            <SocialNav />
-            <MainNav />
-            {children}
-          </>}
-
+          {showSplash ? (
+            <SplashScreen />
+          ) : (
+            <>
+              <SocialNav />
+              <MainNav />
+              <div>{children}</div>
+              <Footer />
+              <a
+                href="https://wa.me/971508335727?text=Hello how can i help you?"
+                target="_blank"
+                className="fixed top-11/12 right-1/12 w-12 z-50 inline-block"
+              >
+                <Image src={whatsappIcon} alt="whatsapp icon" />
+              </a>
+            </>
+          )}
         </ReduxProvider>
       </body>
     </html>

@@ -244,3 +244,22 @@ div[data-slot="navigation-menu-viewport"] {
   background-color: black !important;
 
 }
+
+.footer {
+  position: relative;
+  background-image: url("../public/penFooterLogo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-block: 6rem;
+  z-index: 1;
+  overflow: hidden;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* adjust opacity as needed */
+  z-index: -1;
+}
+

@@ -5,11 +5,14 @@ import { Button } from "@/components/ui/button";
 import logo from "@/public/logo-01.png";
 import { NavLinks } from "./NavLinks";
 import { MobileMenu } from "./mobileMenu";
+import Link from "next/link";
 
 export default function MainNav() {
   return (
     <div className="flex items-center justify-center md:justify-between md:w-full px-10 py-6 relative">
-      <Image src={logo} width={50} alt="Omar al shamsi logo" />
+      <Link href="/">
+        <Image src={logo} width={50} alt="Omar al shamsi logo" />
+      </Link>
       <div className="hidden md:block ">
         <NavLinks />
       </div>
