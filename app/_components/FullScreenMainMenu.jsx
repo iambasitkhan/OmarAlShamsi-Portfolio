@@ -36,8 +36,8 @@ export default function FullScreenMenu() {
             />
           </svg>
         </DialogTrigger>
-        <DialogContent className="lg:pt-18 mx-auto !max-w-full h-full bg-[#4738213b] backdrop-blur-3xl text-amber-50 border-none">
-          <Tabs defaultValue="practice" className="self-center gap-0">
+        <DialogContent className="lg:pt-18 mx-auto !max-w-full h-full bg-[#4738213b] backdrop-blur-3xl text-amber-50 border-none z-[9999]">
+          <Tabs defaultValue="practice" className="self-center gap-0 z-[99999]">
             <TabsList className="p-0">
               {tabs.map((tab) => (
                 <Tab data={tab} />

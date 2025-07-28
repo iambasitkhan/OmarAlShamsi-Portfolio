@@ -26,11 +26,11 @@ export function NavLinks() {
             <Link href="/docs">About me</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
             <Link href="/docs">Attorneys</Link>
           </NavigationMenuLink>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
         <NavigationMenuItem>
           <NavigationMenuTrigger>Our services</NavigationMenuTrigger>
           <NavigationMenuContent className=" bg-[rgba(0,0,0,0.5)] backdrop-blur-2xl ">
@@ -42,7 +42,7 @@ export function NavLinks() {
                 >
                   Pratices
                 </TabsTrigger>
-                <TabsTrigger
+                {/* <TabsTrigger
                   value="sectors"
                   className="font-semibold tracking-wider cursor-pointer"
                 >
@@ -53,46 +53,70 @@ export function NavLinks() {
                   className="font-semibold tracking-wider cursor-pointer"
                 >
                   Lawers
-                </TabsTrigger>
+                </TabsTrigger> */}
               </TabsList>
               <TabsContent value="practice">
                 <Card className="grid grid-cols-[repeat(3,auto)] gap-x-7 gap-y-4 text-white     items-center space-x-4 text-sm p-4 border-[#fffbeb45] rounded-md">
                   <Link
-                    href="/practices"
+                    href="/practices/arbitration"
                     className="tracking-wider font-light  whitespace-nowrap "
                   >
                     Arbitration
                   </Link>
-                  <p className="tracking-wider font-light  whitespace-nowrap">
+                  <Link
+                    href="/practices/bankingandfinance"
+                    className="tracking-wider font-light  whitespace-nowrap"
+                  >
                     Banking & Finance
-                  </p>
-                  <p className="tracking-wider font-light  whitespace-nowrap">
+                  </Link>
+                  <Link
+                    href="/practices/commercial"
+                    className="tracking-wider font-light  whitespace-nowrap"
+                  >
                     Commercial
-                  </p>
-                  <p className="tracking-wider font-light  whitespace-nowrap">
+                  </Link>
+                  <Link
+                    href="/practices/competition"
+                    className="tracking-wider font-light  whitespace-nowrap"
+                  >
                     Competition
-                  </p>
-                  <p className="tracking-wider font-light  whitespace-nowrap">
+                  </Link>
+                  <Link
+                    href="/practices/construction-and-infrastructure"
+                    className="tracking-wider font-light  whitespace-nowrap"
+                  >
                     Construction & Infrastructure
-                  </p>
-                  <p className="tracking-wider font-light whitespace-nowrap">
+                  </Link>
+                  <Link
+                    href="/practices/corporate"
+                    className="tracking-wider font-light whitespace-nowrap"
+                  >
                     Corporate / Mergers & Acquisitions
-                  </p>
-                  <p className="tracking-wider font-light whitespace-nowrap">
-                    Corporate Services
-                  </p>
-                  <p className="tracking-wider font-light whitespace-nowrap">
+                  </Link>
+                  <Link
+                    href="/practices/corporate-structuring"
+                    className="tracking-wider font-light whitespace-nowrap"
+                  >
                     Corporate Structuring
-                  </p>
-                  <p className="tracking-wider font-light whitespace-nowrap">
+                  </Link>
+                  <Link
+                    href="/practices/digital-and-data"
+                    className="tracking-wider font-light whitespace-nowrap"
+                  >
                     Digital & Data
-                  </p>
-                  <p className="tracking-wider font-light whitespace-nowrap">
+                  </Link>
+                  <Link
+                    href="/practices/disputed-resolution"
+                    className="tracking-wider font-light whitespace-nowrap"
+                  >
                     Dispute Resolution
-                  </p>
-                  <p className="tracking-wider font-light whitespace-nowrap">
+                  </Link>
+                  <Link
+                    href="/practices/employment-and-incentives"
+                    className="tracking-wider font-light whitespace-nowrap"
+                  >
                     Employment & Incentives
-                  </p>
+                  </Link>
                 </Card>
               </TabsContent>
               {/* <TabsContent value="sectors">

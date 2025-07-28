@@ -248,7 +248,16 @@ export default function Home() {
           </div>
         </Card>
       </section>
-
+      <section className="py-8 pb-14 px-3 ">
+        <h2
+          className={`text-3xl md:text-5xl text-center my-12 md:my-24 lg:mb-18 ${playfair.className} after:block after:w-15 after:border after:mx-auto after:border-[#D2B48C] after:mt-2`}
+        >
+          Practice Areas
+        </h2>
+        <div className="max-w-screen-2xl px-6 md:px-10 mx-auto grid grid-cols-1 sm:grid-cols-2">
+          <PracticeAreaCard data={practiceAreas} />
+        </div>
+      </section>
       <section className="py-8 pb-14 bg-[#b4925f0f]">
         <h2
           className={`text-5xl text-center mb-24 ${playfair.className} after:block after:w-15 after:border after:mx-auto after:border-[#D2B48C] after:mt-2`}
@@ -357,16 +366,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-8 pb-14 px-3 ">
-        <h2
-          className={`text-3xl md:text-5xl text-center my-12 md:my-24 lg:mb-18 ${playfair.className} after:block after:w-15 after:border after:mx-auto after:border-[#D2B48C] after:mt-2`}
-        >
-          Practice Areas
-        </h2>
-        <div className="max-w-screen-2xl px-6 md:px-10 mx-auto grid grid-cols-1 sm:grid-cols-2">
-          <PracticeAreaCard data={practiceAreas} />
-        </div>
-      </section>
+
       <Marquee pauseOnHover className="bg-[#b7945e] py-14 gap-4" speed={100}>
         <div className="flex gap-4">
           <div className={` text-amber-50 text-5xl font-extralight`}>

@@ -5,7 +5,7 @@ export default function page() {
   return (
     <main>
       <Map />
-      <div className="max-w-lg mx-auto py-12">
+      <div className="max-w-lg mx-auto py-12 -z-20">
         <ContactUs />
       </div>
     </main>
