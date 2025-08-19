@@ -69,7 +69,7 @@ export default function AboutmePage() {
         </Container>
       </section>
       <section className="relative w-full h-[300px] sm:h-[400px] overflow-hidden">
-        <video
+        {/* <video
           className="absolute top-0 left-0 w-full h-full object-cover"
           autoPlay
           loop
@@ -77,7 +77,7 @@ export default function AboutmePage() {
           playsInline
         >
           <source src="/vedio.mp4" type="video/mp4" />
-        </video>
+        </video> */}
         <div className="absolute top-0 left-0 w-full h-full bg-black/40 flex items-center justify-center">
           <h2 className="text-white text-md md:text-4xl font-bold">
             Welcome to OMAR ALSHAMSI
