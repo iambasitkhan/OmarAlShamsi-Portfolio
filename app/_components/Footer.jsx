@@ -2,13 +2,14 @@
 // import logoDark from "@/public/logo-01.png";
 
 import Link from "next/link";
+import Container from "./Container";
 
 export default function Footer() {
   return (
     <footer className="py-12 flex items-center justify-center footer">
       {/* <Image src={logoDark} alt="Dark logo" className="w-38 h-auto" /> */}
-      <div className="container mx-auto">
-        <ul className="inline-flex gap-8">
+      <Container>
+        <ul className="sm:inline-flex text-center tracking-widest space-y-10 gap-8">
           <li>
             <Link href="/practices" className="text-white uppercase">
               Our Practices
@@ -30,7 +31,7 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
-      </div>
+      </Container>
     </footer>
   );
 }

@@ -263,3 +263,9 @@ div[data-slot="navigation-menu-viewport"] {
   z-index: -1;
 }
 
+/* 
+.about-us-banner{
+  background: rgba(255, 255, 255, 0.2) url('../public/office-pic.jpeg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+} */

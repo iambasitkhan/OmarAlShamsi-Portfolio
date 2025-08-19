@@ -23,7 +23,7 @@ export function NavLinks() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/docs">About me</Link>
+            <Link href="/me">About me</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         {/* <NavigationMenuItem>
