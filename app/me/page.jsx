@@ -69,7 +69,7 @@ export default function AboutmePage() {
         </Container>
       </section>
       <section className="relative w-full h-[300px] sm:h-[400px] overflow-hidden">
-        {/* <video
+        <video
           className="absolute top-0 left-0 w-full h-full object-cover"
           autoPlay
           loop
@@ -77,7 +77,7 @@ export default function AboutmePage() {
           playsInline
         >
           <source src="/vedio.mp4" type="video/mp4" />
-        </video> */}
+        </video>
         <div className="absolute top-0 left-0 w-full h-full bg-black/40 flex items-center justify-center">
           <h2 className="text-white text-md md:text-4xl font-bold">
             Welcome to OMAR ALSHAMSI
@@ -86,8 +86,8 @@ export default function AboutmePage() {
       </section>
       <section className="py-28">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-[auto_250px] gap-12">
-            <div className="sm:py-12 text-center ">
+          <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-[auto_250px] sm:grid-rows-[auto] gap-12">
+            <div className="sm:py-12 text-center md:text-left ">
               <h2 className="text-3xl mb-6">
                 <div>Who</div> we are
               </h2>
