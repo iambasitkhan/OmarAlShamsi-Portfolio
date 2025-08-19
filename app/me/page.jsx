@@ -98,7 +98,7 @@ export default function AboutmePage() {
                 molestias, possimus consequatur! Quaerat quam, cumque delectus
                 soluta numquam mollitia itaque laudantium? Nemo rerum officia
                 culpa laboriosam ipsam, ipsum rem commodi dolor? Dolores,
-                similique.
+                similique. Lorem.
               </p>
               <p className="pb-8 text-gray-600">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
